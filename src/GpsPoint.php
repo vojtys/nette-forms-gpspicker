@@ -9,9 +9,13 @@ use Nette;
  * Single point
  *
  * @author Vojtěch Dobeš
+ * @property-read float $lat
+ * @property-read float $lng
+ * @property-read string $address  
  */
-class GpsPoint extends Nette\Object
+class GpsPoint
 {
+	use Nette\SmartObject;
 
 	/** @var float */
 	private $lat;
