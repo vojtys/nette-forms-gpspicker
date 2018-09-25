@@ -3,7 +3,7 @@
     "description": "Google Maps based picker of coordinates for Nette Framework.",
     "keywords": ["nette", "forms", "maps", "gps"],
     "homepage": "http://github.com/vojtech-dobes/nette-forms-gpspicker",
-    "license": "New BSD",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Vojtěch Dobeš",
