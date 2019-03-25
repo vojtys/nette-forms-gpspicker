@@ -1,5 +1,5 @@
 {
-    "name": "lukyrys/nette-forms-gpspicker",
+    "name": "vojtys/nette-forms-gpspicker",
     "description": "Google Maps based picker of coordinates for Nette Framework.",
     "keywords": ["nette", "forms", "maps", "gps"],
     "homepage": "http://github.com/vojtech-dobes/nette-forms-gpspicker",
