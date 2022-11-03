@@ -67,7 +67,7 @@ class GpsPositionPicker extends GpsPicker
 
 
 
-	public function loadHttpData()
+	public function loadHttpData(): void
 	{
 		parent::loadHttpData();
 		$this->lat = $this->getHttpData(Form::DATA_LINE, '[lat]');

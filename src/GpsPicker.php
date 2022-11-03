@@ -199,7 +199,7 @@ abstract class GpsPicker extends BaseControl
 
 
 
-	public function loadHttpData()
+	public function loadHttpData(): void
 	{
 		$this->search = $this->getHttpData(Form::DATA_LINE, '[search]');
 	}
