@@ -46,7 +46,7 @@ class GpsPickerMacros extends Latte\Macros\MacroSet
 		while ($node->parentNode) {
 			if ($node->parentNode->name == 'gpspicker') {
 				$cmd = 'if ($_label = $_gpspicker->getPartialLabel(%node.word)) echo $_label->addAttributes(%node.array)';
-				if ($node->isEmpty = (substr($node->args, -1) === '/')) {
+				if ($node->empty = (substr($node->args, -1) === '/')) {
 					$node->setArgs(substr($node->args, 0, -1));
 					return $writer->write($cmd);
 				} else {
