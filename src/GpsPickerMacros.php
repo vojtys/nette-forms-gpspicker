@@ -20,7 +20,7 @@ class GpsPickerMacros extends Latte\Macros\MacroSet
 	public static function install(Latte\Compiler $compiler)
 	{
 		$me = new static($compiler);
-		$me->addMacro('gpspicker', '$_gpspicker = $_form[%node.word]; $_gpspickerControl = $_gpspicker->getControl(TRUE); echo $_gpspickerControl->addAttributes(%node.array)->startTag()', 'echo $_gpspickerControl->endTag(); unset($_gpspicker, $_gpspickerControl)');
+		$me->addMacro('gpspicker', '$_gpspicker = $form[%node.word]; $_gpspickerControl = $_gpspicker->getControl(TRUE); echo $_gpspickerControl->addAttributes(%node.array)->startTag()', 'echo $_gpspickerControl->endTag(); unset($_gpspicker, $_gpspickerControl)');
 		$me->addMacro('gpspicker:input', array($me, 'macroInput'));
 		$me->addMacro('gpspicker:label', array($me, 'macroLabel'), '?></label><?php');
 	}
